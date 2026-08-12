@@ -121,6 +121,42 @@ The project includes visualizations for:
 - Model performance comparison
 - Outliers removed by class
 
+### Model Comparison
+
+![Model Comparison](visualizations/model_comparison.png)
+
+### Outlier Removal Comparison
+
+![Outlier Removal Comparison](visualizations/outlier_removal_comparison.png)
+
+
+## Machine Learning Models
+
+After preprocessing and outlier removal, three classification algorithms were applied:
+
+1. Support Vector Machine (SVM)
+2. Naive Bayes
+3. Decision Tree
+
+### Model Performance
+
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---|---:|---:|---:|---:|
+| SVM | 98.49% | 98.13% | 88.98% | 93.33% |
+| Naive Bayes | 97.38% | 100.00% | 77.97% | 87.62% |
+| Decision Tree | 96.88% | 93.07% | 79.66% | 85.84% |
+
+### Best Performing Model
+
+SVM achieved the best overall performance among the three models, with:
+
+- Accuracy: 98.49%
+- Precision: 98.13%
+- Recall: 88.98%
+- F1 Score: 93.33%
+
+The results show that SVM provided the strongest overall balance between precision and recall for spam classification.
+
 ## Project Structure
 
 ```text
@@ -141,6 +177,7 @@ Spam-Classification-Outlier-Analysis/
 │   ├── confusion_matrix_after.png
 │   ├── model_comparison.png
 │   └── outliers_by_class.png
+│   └── outlier_removal_comparison.png
 │
 ├── README.md
 ├── requirements.txt
